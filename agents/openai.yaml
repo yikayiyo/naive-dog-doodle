@@ -1,0 +1,4 @@
+interface:
+  display_name: "狗狗稚拙手绘"
+  short_description: "根据狗狗照片生成保留神态、体态与毛色特征的稚拙手绘插画"
+  default_prompt: "使用 $naive-dog-doodle，把我提供的狗狗照片画成一张稚拙、松弛、有辨识度的手绘插画。"
