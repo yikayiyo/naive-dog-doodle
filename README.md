@@ -37,9 +37,17 @@
 
 ## 安装
 
+推荐使用 Codex 自带的 skill 安装器：
+
 ```bash
-git clone https://github.com/yikayiyo/naive-dog-doodle.git ~/.codex/skills/naive-dog-doodle
+python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" \
+  --repo yikayiyo/naive-dog-doodle \
+  --path . \
+  --name naive-dog-doodle
 ```
+
+这里 `--path .` 指向仓库根目录（本仓库根目录就是 skill），`--name` 用来确保安装目录名正确。安装器会将它放到
+`${CODEX_HOME:-$HOME/.codex}/skills/naive-dog-doodle`；如果目标目录已经存在，安装器会拒绝覆盖，请先确认已有安装。
 
 重新启动 Codex 或刷新 skill 列表后即可调用。
 
